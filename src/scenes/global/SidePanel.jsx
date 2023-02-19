@@ -64,10 +64,12 @@ function SidePanel() {
                 mr={0}
                 //   alignItems="center"
               >
-                <Typography variant="h5" color={colors.grey[100]}>
+                <Typography variant="h5" color={colors.grey[300]}>
                   Telemetry
                 </Typography>
-                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+                <IconButton
+                  onClick={() => setIsCollapsed(!isCollapsed)}
+                >
                   <MenuOutlined />
                 </IconButton>
               </Box>
@@ -92,7 +94,7 @@ function SidePanel() {
                 <Box textAlign={"center"}>
                   <Typography
                     variant="h5"
-                    color={colors.grey[100]}
+                    color={colors.grey[400]}
                     fontWeight="bold"
                     sx={{ m: "10px 0 0 0" }}
                   >
@@ -119,7 +121,11 @@ function SidePanel() {
             to="/"
           />
 
-          <Typography variant='h6' color={colors.greenAccent[200]} sx={{m: "10px 0 5px 15px"}}>
+          <Typography
+            variant="h6"
+            color={colors.greenAccent[200]}
+            sx={{ m: "10px 0 5px 15px" }}
+          >
             Data
           </Typography>
 
@@ -145,7 +151,11 @@ function SidePanel() {
             to="/invoice"
           />
 
-          <Typography variant='h6' color={colors.greenAccent[200]} sx={{m: "10px 0 5px 15px"}}>
+          <Typography
+            variant="h6"
+            color={colors.greenAccent[200]}
+            sx={{ m: "10px 0 5px 15px" }}
+          >
             Pages
           </Typography>
 
@@ -171,7 +181,11 @@ function SidePanel() {
             to="/faq"
           />
 
-          <Typography variant='h6' color={colors.greenAccent[200]} sx={{m: "10px 0 5px 15px"}}>
+          <Typography
+            variant="h6"
+            color={colors.greenAccent[200]}
+            sx={{ m: "10px 0 5px 15px" }}
+          >
             Charts
           </Typography>
 
