@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from '../components/Header'
 
 function Form() {
   return (
-    <div>Form</div>
+    <Header title={"Profile"} subtitle={"User Management Page"} />
   )
 }
 

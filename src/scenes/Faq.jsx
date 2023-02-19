@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from '../components/Header'
 
 function Faq() {
   return (
-    <div>Faq</div>
+    <Header title={"FAQs"} subtitle={"Frequently Asked Questions"} />
   )
 }
 

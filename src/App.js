@@ -14,8 +14,6 @@ import Invoices from "./scenes/Invoices";
 import Line from "./scenes/Line";
 import Pie from "./scenes/Pie";
 import Team from "./scenes/Team";
-import { ProSidebarProvider } from "react-pro-sidebar";
-import Header from "./components/Header";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -27,7 +25,6 @@ function App() {
           <SidePanel />
           <main className="content">
             <TopBar />
-            <Header />
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/bar" element={<Bar />} />

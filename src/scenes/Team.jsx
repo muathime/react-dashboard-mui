@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from '../components/Header'
 
 function Team() {
   return (
-    <div>Team</div>
+    <Header title={"Teams"} subtitle={"Manage your teams here"} />
   )
 }
 

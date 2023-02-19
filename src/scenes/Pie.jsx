@@ -1,9 +1,10 @@
 import React from 'react'
+import Header from '../components/Header'
 
 function Pie() {
   return (
-    <div>Pie</div>
-  )
+    <Header title={"Pie Chart"} subtitle={"Data presentation in Pie Chart"} />
+  );
 }
 
 export default Pie

@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from '../components/Header'
 
 function Calendar() {
   return (
-    <div>Calendar</div>
+    <Header title={"Calendar"} subtitle={"Events and bookings"} />
   )
 }
 
