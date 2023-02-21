@@ -1,4 +1,4 @@
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material";
 import { BarChartOutlined, CalendarTodayOutlined, ContactPageOutlined, Dashboard, DashboardOutlined, LiveHelpOutlined, ManageAccountsOutlined, MapsHomeWorkOutlined, MenuOutlined, PeopleAltOutlined, PieChartOutlineOutlined, Receipt, ReceiptOutlined, StackedLineChartOutlined } from "@mui/icons-material";
 import { Box, IconButton, Typography } from "@mui/material";
 import React, { useState } from "react";
@@ -84,7 +84,7 @@ function SidePanel() {
                   sx={{ mt: 1 }}
                 >
                   <img
-                    src={"../../assets/pp.jpg"}
+                    src={"../../assets/avatar.jpg"}
                     alt="profile"
                     width={100}
                     height={100}
