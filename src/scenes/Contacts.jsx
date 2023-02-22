@@ -107,8 +107,11 @@ function Contacts() {
             color: `${colors.grey[100]} !important`,
           },
           "& .MuiDataGrid-footerContainer": {
-            borderTop: 'none',
+            borderTop: "none",
             backgroundColor: colors.grey[700],
+          },
+          "& .MuiCheckbox-colorPrimary": {
+            color: colors.greenAccent[700],
           },
         }}
       >

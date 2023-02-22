@@ -97,6 +97,9 @@ function Team() {
           "& .name-column--cell": {
             color: colors.grey[300],
           },
+          "& .MuiCheckbox-colorPrimary": {
+            color: colors.greenAccent[700],
+          },
         }}
       >
         <DataGrid

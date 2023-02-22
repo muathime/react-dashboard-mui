@@ -114,6 +114,9 @@ function Invoices() {
             borderTop: "none",
             backgroundColor: colors.grey[700],
           },
+          "& .MuiCheckbox-colorPrimary": {
+            color: colors.greenAccent[700]
+          }
         }}
       >
         <DataGrid
