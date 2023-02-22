@@ -51,7 +51,7 @@ function Team() {
         return (
           <Box
             padding="10px"
-            width="70%"
+            width="100%"
             borderRadius="4px"
             display="flex"
             justifyContent="space-between"
@@ -62,7 +62,6 @@ function Team() {
             }
           >
             <Typography>{access}</Typography>
-
             {access === "admin" && <AdminPanelSettingsOutlined />}
             {access === "manager" && <SecurityOutlined />}
             {access === "user" && <LockOpenOutlined />}
@@ -75,13 +74,37 @@ function Team() {
   return (
     <Box m="20px">
       <Header title={"Teams"} subtitle={"Manage your teams here"} />
-      <Box height='75vh' m='45px 0 0 0'>
+      <Box
+        height="75vh"
+        m="5px 0 0 0"
+        sx={{
+          "& .MuiDataGrid-columnHeaders": {
+            backgroundColor: colors.grey[700],
+            borderBottom: "none",
+          },
+          "& .MuiDataGrid-columnHeaderTitle": {
+            fontWeight: "bold",
+          },
+          "& .MuiDataGrid-main": {
+            border: "none",
+          },
+          "&. MuiDataGrid-root": {
+            border: "none",
+          },
+          "&. MuiDataGrid-cell": {
+            border: "none",
+          },
+          "& .name-column--cell": {
+            color: colors.grey[300],
+          },
+        }}
+      >
         <DataGrid
           columns={columns}
           rows={rows}
           // pageSize={5}
           // rowsPerPageOptions={[5]}
-          // checkboxSelection
+          checkboxSelection
         />
       </Box>
     </Box>
