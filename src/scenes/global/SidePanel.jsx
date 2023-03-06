@@ -1,5 +1,18 @@
 import { useTheme } from "@mui/material";
-import { BarChartOutlined, CalendarTodayOutlined, ContactPageOutlined, Dashboard, DashboardOutlined, LiveHelpOutlined, ManageAccountsOutlined, MapsHomeWorkOutlined, MenuOutlined, PeopleAltOutlined, PieChartOutlineOutlined, Receipt, ReceiptOutlined, StackedLineChartOutlined } from "@mui/icons-material";
+import {
+  BarChartOutlined,
+  CalendarTodayOutlined,
+  ContactPageOutlined,
+  DashboardOutlined,
+  LiveHelpOutlined,
+  ManageAccountsOutlined,
+  MapsHomeWorkOutlined,
+  MenuOutlined,
+  PeopleAltOutlined,
+  PieChartOutlineOutlined,
+  ReceiptOutlined,
+  StackedLineChartOutlined,
+} from "@mui/icons-material";
 import { Box, IconButton, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { Menu, MenuItem, ProSidebar } from "react-pro-sidebar";
@@ -11,12 +24,18 @@ import { tokens } from "../../theme";
 const Item = ({ title, to, selected, setSelected, icon }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+
   return (
-    <MenuItem active={selected === title} icon={icon} onClick={()=>setSelected(title)} style={{color: colors.grey[100]}}>
+    <MenuItem
+      active={selected === title}
+      icon={icon}
+      onClick={() => setSelected(title)}
+      style={{ color: colors.grey[100] }}
+    >
       <Typography>{title}</Typography>
-      <Link to={to}/>
+      <Link to={to} />
     </MenuItem>
-  )
+  );
 };
 
 function SidePanel() {
@@ -67,9 +86,7 @@ function SidePanel() {
                 <Typography variant="h5" color={colors.grey[300]}>
                   Telemetry
                 </Typography>
-                <IconButton
-                  onClick={() => setIsCollapsed(!isCollapsed)}
-                >
+                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlined />
                 </IconButton>
               </Box>
