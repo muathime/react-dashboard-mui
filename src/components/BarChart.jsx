@@ -1,7 +1,12 @@
+import { useTheme } from "@mui/material";
 import { ResponsiveBar } from "@nivo/bar";
 import React from "react";
+import { tokens } from "../theme";
 
 function BarChart() {
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+
   const data = [
     {
       country: "Kenya",
@@ -109,6 +114,7 @@ function BarChart() {
           anchor: "bottom-right",
           direction: "column",
           justify: false,
+          itemTextColor: colors.greenAccent[300],
           translateX: 120,
           translateY: 0,
           itemsSpacing: 2,
